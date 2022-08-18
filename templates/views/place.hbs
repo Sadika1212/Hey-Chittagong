@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app="myApp">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../cs/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style_packages.css">
+  <title>Places</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="icon" href="css\images\icon.ico" type="image/ico" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body ng-app="myApp">
+  {{>navbar}}
+  <div class="container">
+    <div class="buttons mt-5">
+      <a href="/tour"><button type="button" id="amazon" class="btn btn-outline-primary">Back</button></a>
+      <a href="#sea"><button type="button" id="amazon" class="btn btn-outline-primary">Beaches&Lakes</button></a>
+      <a href="#mount"><button type="button" id="amazon" class="btn btn-outline-primary">Mountains</button></a>
+      <a href="#landscapes"><button type="button" id="amazon" class="btn btn-outline-primary">Landscapes</button></a>
+      <a href="#falls"><button type="button" id="amazon" class="btn btn-outline-primary">Falls</button></a>
+    </div>
+  </div>
+
+
+  <div id="tours">
+    <h1 id="sea">Beaches&Lakes</h1>
+    <!-----------------BEACH LAKE================-->
+    <div class="card-deck topc">
+      <div class="card" id="cards">
+        <img class="card-img-top" src="images/cox.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Cox's Bazar</h5>
+          <p class="card-text">Cox's Bazar Beach,top tourist attraction,is the longest natural sea beach in the world.
+            It is famous mostly for its long natural sandy beach.
+          </p>
+          <a href="https://travel.discoverybangladesh.com/tour-to-coxs-bazar-bangladesh.html"><button type="button"
+              id="amazon" class="btn btn-outline-primary">Learn More</button></a>
+          <div ng-view></div>
+        </div>
+      </div>
+      <div class="card" id="cards">
+        <img class="card-img-top" src="images/saint.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Saint Martin Island</h5>
+          <p class="card-text">St. Martin's Island is a small island in the northeastern part of the Bay of Bengal,
+            about 9 km south of the tip of the Cox's Bazar-Teknaf peninsula, and forming the southernmost part of
+            Bangladesh. There is a small adjoining island that is separated at high tide, called Chera Dwip. It is about
+            8 kilometres west of the northwest coast of Myanmar, at the mouth of the Naf River. </p>
+          <a href="http://www.tripsilo.com/tours/bangladesh/saint-martin/saint-martin-tour-package"><button
+              type="button" class="btn btn-outline-primary">Learn More</button></a>
+        </div>
+      </div>
+      <div class="card" id="cards">
+        <img class="card-img-top" src="images/boga.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Bogalake</h5>
+          <p class="card-text">Bogalake is located in Ruma Upazila in the hill district Bandarban, Bangladesh. Though
+            it's a natoural sweet water resource Lake water is too acidic for any form of life.
+
+          </p>
+          <a href="https://www.travelmate.com.bd/boga-lake-travel-guideline/"><button type="button"
+              class="btn btn-outline-primary">Learn More</button></a>
+        </div>
+      </div>
+      <div class="card" id="cards">
+        <img class="card-img-top" src="images/naval.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Patenga Beach</h5>
+          <p class="card-text">Patenga is a sea beach of the Bay of Bengal, located 14 kilometres (8.7 mi) south from
+            the port city of Chattogram, Bangladesh.
+            It is near to the mouth of the Karnaphuli River. </p>
+          <a href="https://www.travelmate.com.bd/patenga-sea-beach/"><button type="button"
+              class="btn btn-outline-primary">Learn More</button></a>
+        </div>
+      </div>
+      <div class="card" id="cards">
+        <img class="card-img-top" src="images/kaptai.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Kaptai lake</h5>
+          <p class="card-text">Kaptai Lake is the largest lake in Bangladesh.It is located in the Kaptai Upazila under
+            Rangamati District of Chittagong Division.
+          </p>
+          <a href="https://www.travelmate.com.bd/kaptai-lake-travel-guideline/"><button type="button"
+              class="btn btn-outline-primary">Learn More</button></a>
+        </div>
+      </div>
+    </div>
+
+    <!----====================Mountain=======================-->
+    <h1 id="mount">Mountains</h1>
+    <div class="card-deck">
+      <div class="card" id="cards">
+        <img class="card-img-top" src="images/nilgiri.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Nilgiri</h5>
+          <p class="card-text">Nilgiri is one of the most favourite tourist spots in Chittagong.
+            Greenaries of nilgiri hill amaze tourists. This area is controlled by Bangladesh Army.
+          </p>
+          <a href="https://www.travelmate.com.bd/nilgiri-travel-guideline/"><button type="button"
+              class="btn btn-outline-primary">Learn More</button></a>
+        </div>
+      </div>
+      <div class="card" id="cards">
+        <img class="card-img-top" src="images/chimbuk.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Chimbuk Pahar</h5>
+          <p class="card-text">The Chimbuk hills Or Pahar of Bandarban, known as Darjeeling in Bengal.
+            Chimbuk is the third largest mountain in Bangladesh.
+          </p>
+          <a href="https://www.travelmate.com.bd/chimbuk-hill-bandarban/"><button type="button"
+              class="btn btn-outline-primary">Learn More</button></a>
+        </div>
+      </div>
+      <div class="card" id="cards">
+        <img class="card-img-top" src="images/keo.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">The Keokradong</h5>
+          <p class="card-text">Keokradong is located in Ramu Upazila of Bandarban district. At about 986 meters (3235
+            feet) high,
+            it was once considered the highest mountain in the country, but according to the modern method,
+            it is currently the fifth largest mountain.</p>
+          <a href="https://www.travelmate.com.bd/keokradong-travel-guideline/"><button type="button"
+              class="btn btn-outline-primary">Learn More</button></a>
+        </div>
+      </div>
+    </div>
+    <!----================Landscapes========================-->
+    <h1 id="landscapes">Landscapes</h1>
+    <div class="card-deck topc">
+      <div class="card" id="cards">
+        <img class="card-img-top" src="images/war.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">War Cemetry</h5>
+          <p>The Chittagong Commonwealth War Cemetery or Chittagong War Cemetery is a Commonwealth War Graves Commission
+            cemetery in Chittagong.
+            This cemetery was established to honor Commonwealth soldiers and others who died in World War II.
+          </p>
+          <a href="https://www.thedailystar.net/city/news/chattograms-uncommon-tourist-attraction-war-cemetery-1856113"><button
+              type="button" id="amazon" class="btn btn-outline-primary">Learn More</button></a>
+          <div ng-view></div>
+        </div>
+      </div>
+      <div class="card" id="cards">
+        <img class="card-img-top" src="images/golf.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Vatiary Golf Club</h5>
+          <p class="card-text">This world class golf club of Chittagong is associated with army gold club situated at
+            Kurmitola.
+            This place is full of greenery and posh vibe.
+          </p>
+          <a
+            href="https://www.toursian.com/tourist_attractions-bangladesh-bhatiary_golf_country_club_bhatiari_chittagong"><button
+              type="button" class="btn btn-outline-primary">Learn More
+            </button></a>
+        </div>
+      </div>
+
+      <div class="card" id="cards">
+        <img class="card-img-top" src="images/hanging.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Rangamati Hanging Bridge</h5>
+          <p> Hanging Bridge(Jhulonto Bridge in Bengali)is the landmark icon of Rangamati.
+            It’s a popular tourist spot and a must go destination.</p>
+          <a href="https://bangladoot.se/hanging-bridge-of-rangamati/"><button type="button"
+              class="btn btn-outline-primary">Learn More</button></a>
+        </div>
+      </div>
+    </div>
+    <!---===========================FALLS============================-->
+    <h1 id="falls">Falls</h1>
+    <div class="card-deck topc">
+      <div class="card" id="cards">
+        <img class="card-img-top" src="images/nafa.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Nafakhum</h5>
+          <p>Nafakhum is a waterfall in Bangladesh on the Remaikree River, a tributary of the Sangu River.
+            It is among the largest waterfalls in the country by volume of water falling.
+          </p>
+          <a href="http://www.bandarbantours.com/nafakhum-and-remakri/"><button type="button" id="amazon"
+              class="btn btn-outline-primary">Learn More</button></a>
+          <div ng-view></div>
+        </div>
+      </div>
+      <div class="card" id="cards">
+        <img class="card-img-top" src="images/khoia.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Khoiachara</h5>
+          <p class="card-text">Khoiyachora Waterfall is a hilly waterfall which is situated on the hills of Mirsharai,
+            Chittagong, Bangladesh.
+            Khoiyachora waterfall and its corridor is one of the largest in this hilly belt.
+          </p>
+          <a href="http://tourvaley.com/en/khoiyachora-waterfalls"><button type="button"
+              class="btn btn-outline-primary">Learn More
+            </button></a>
+        </div>
+      </div>
+      <div class="card" id="cards">
+        <img class="card-img-top" src="images/amiakhum.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Amiakhum</h5>
+          <p>Amiyakhum is situated at a remote area called Tindu of Thanchi upazilla under Bandarban Hill District in
+            Bangladesh.
+            Amiakhum Waterfall is one of the most beautiful waterfalls in Bangladesh.
+          </p>
+          <a href="http://offroadbangladesh.com/places/amiakhum-waterfall/"><button type="button"
+              class="btn btn-outline-primary">Learn More</button></a>
+        </div>
+      </div>
+      <div class="card" id="cards">
+        <img class="card-img-top" src="images/shuvo.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title" id="name">Shobholong</h5>
+          <p>Shuvolong Waterfall is a beautiful waterfall in Rangamati.
+            It is a famous place with the tourists for the waterfall, high hills and the natuarl surrounding it offers.
+          </p>
+          <a href="https://www.toursian.com/tourist_attractions-bangladesh-shuvolong_waterfalls_rangamati"><button
+              type="button" class="btn btn-outline-primary">Learn More</button></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="../jq/jquery.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      // ul = document.getElementById("tours");
+      li = document.getElementById("cards");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsById("name")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        }
+        else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+
+</body>
+
+</html>

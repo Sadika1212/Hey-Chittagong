@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/hospital.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hospital of Chittagong</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- ******* Loading effect******** -->
+    <div class="loader">
+        <div class="center">
+            <div class="one"></div>
+        </div>
+    </div>
+
+
+
+
+
+
+    {{!-- ***********************hospital section************** --}}
+    <section class="hospital">
+        <div class="hospital-header">
+            {{>navbar}}
+            <div class="hospital-header-text">
+               <h2 class="font-weight-bold">Run for your life</h2>
+                 <button class= "contact" onclick="document.location.href='/emcon'">Emergency contact</button>
+           </div>
+       </div> 
+       <div class="hospital-search">
+           <h5>Search Hospital</h5>
+           <form class="d-flex" id="search">
+                    <input class="form-control snd" type="search" placeholder="Search hospital"
+                        aria-label="Search">
+                    <button id="button" class="btnsearch" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <div class="spinner">
+                        <i class="fa fa-spinner"></i>
+                    </div>
+            </form>
+       </div>
+        <div class="hospital-search1">
+            <h5>Search best doctor of Chittagong</h5>
+           <form class="d-flex" id="search">
+                    <input class="form-control snd" type="search" placeholder="Search doctor"
+                        aria-label="Search">
+                    <button id="button" class="btnsearch" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <div class="spinner">
+                        <i class="fa fa-spinner"></i>
+                    </div>
+            </form>
+       </div>
+            
+
+        {{!-- ***************dark/light theme************ --}}
+        <div class="theme">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+                <img class="moon" src="img/moon.png" alt="">
+                <img class="sun" src="img/sun.png" alt="">
+                <div class="ball"></div>
+            </label>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                {{# each hospitalList}}
+                <div class="col-sm-6 col-lg-3 col-md-4 full-card">
+                    <div class="card">
+                        <img class="card-img-top" src="{{this.image}}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title border-bottom">{{this.name}}</h5>
+                            <p class="card-text">{{this.location}}</p>
+                            <a href="{{this.link}}" class="btn btn-sm btn-info float-right">
+                                contact now<i></i></a>
+    
+                        </div> 
+                    </div> 
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        <div class="map-header-text">
+            <h3>Route of hospital in map</h3>
+        </div>
+     <iframe src="https://www.google.com/maps/d/u/0/embed?mid=16kWl-CVN82_O3D3JG-aZZvlpz6l66FQG" width="640" height="480"></iframe>
+
+    </section>
+
+    {{!-- ************************************* --}}
+    {{>footer}}
+
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bank.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bank of Chittagong</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    {{!-- ***********************card section************** --}}
+    <section class="bank">
+        <div class="bank-header">
+            {{>navbar}}
+            <div class="bank-header-text">
+                <h2>find Chittagong's local bank</h2>
+                <h5>get services</h5>
+                <form class="d-flex" id="search">
+                    <input class="form-control snd" type="search" placeholder="Search local bank"
+                        aria-label="Search">
+                    <button id="button" class="btnsearch" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <div class="spinner">
+                        <i class="fa fa-spinner"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        {{!-- ***************dark/light theme************ --}}
+        <div class="theme">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+                <img class="moon" src="img/moon.png" alt="">
+                <img class="sun" src="img/sun.png" alt="">
+                <div class="ball"></div>
+            </label>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                {{# each bankList}}
+                <div class="col-sm-6 col-lg-3 col-md-4 full-card">
+                    <div class="card">
+                        <img class="card-img-top" src="{{this.image}}" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title border-bottom">{{this.name}}</h5>
+                            <p class="card-text type">{{this.type}}</p>
+                            <p class="card-text">{{this.location}}</p>
+    
+                        </div>
+                    </div> 
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        <div class="map-header-text">
+            <h3>Route of bank in map</h3>
+        </div>
+        <iframe src="https://www.google.com/maps/d/embed?mid=1dGt63IJ7HAq0kxS_Dlm3FhGrNhD26JGD" width="640" height="480"></iframe>
+
+    </section>
+
+    {{!-- ************************************* --}}
+    {{>footer}}
+
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

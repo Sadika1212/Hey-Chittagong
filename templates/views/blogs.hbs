@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../cs/bootstrap.min.css">
+  <title>Blogs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style media="screen">
+  .card-deck {
+    width: 80%;
+    margin: 60px auto;
+  }
+
+  .navbar .container {
+    padding: 0px;
+  }
+
+  .navbar {
+    padding: 0;
+    transition: all 0.3s ease;
+    z-index: 999;
+    display: block;
+  }
+
+  .navbar:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: #88c9ce;
+    opacity: 1;
+  }
+
+  .navbar-nav {
+    margin: auto;
+  }
+
+  .nav-item a {
+    color: white !important;
+  }
+
+  .nav-item a:hover,
+  .navbar-brand:hover {
+    color: white !important;
+    transform: scale(1.2);
+    z-index: 50;
+  }
+
+  .navbar-brand {
+    font-weight: 650;
+    color: white !important;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+  }
+
+  .navbar-toggler {
+    padding: 0px !important;
+    border: none !important;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none !important;
+  }
+
+  .form-control {
+    line-height: 2px !important;
+    border-radius: 20px;
+
+  }
+
+  .dropdown-menu {
+    background: #88c9ce;
+  }
+
+  .dropdown-menu .dropdown-item:hover {
+    color: #88c9ce !important;
+  }
+
+  span .navbar-toggler-icon {
+    border: none;
+    padding: 0px !important;
+  }
+
+  #search input {
+    flex: 1;
+  }
+
+  #search #button {
+    color: white;
+    font-size: 20px;
+  }
+
+  #search .spinner {
+    animation: spinner 1s infinite linear;
+    display: none;
+    color: white;
+    font-size: 20px;
+    margin-left: 5px;
+  }
+
+  #search button {
+    background: transparent;
+    border: 0px;
+  }
+  .buttons{
+    margin-top: 100px !important;
+  }
+  #search input {
+    background: white;
+    margin-right: 7px;
+  }
+
+  #search.loading button {
+    display: none;
+  }
+
+  #search.loading .spinner {
+    display: block;
+  }
+
+  .card {
+    border: none;
+  }
+
+  .btn {
+    text-align: center;
+    border-color: white;
+    color: white;
+    margin: auto;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  body {
+    background-image: url('images/blog.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .options {
+    width: 15%;
+    margin: auto;
+  }
+
+  h1 {
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+  }
+</style>
+
+<body>
+  {{>navbar}}
+  <div class="cont">
+
+    <div class="buttons">
+      <a href="/place"><button type="button" id="amazon" class="btn btn-outline-primary">Places</button></a>
+      <a href="/blogs"><button type="button" id="amazon" class="btn btn-outline-primary">Blogs</button></a>
+    </div>
+    <h1>BLOGS</h1>
+    <div class="card-deck">
+      <div class="card">
+        <img src="images/port.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Chittagong Port City</h5>
+          <p class="card-text">The Chittagong Port is the main seaport of Bangladesh located on the bank of the
+            Karnaphuli River,
+            and is the core port of countries dependent on the Bay of Bengal. According to Lloyd's, it ranked as the
+            58th busiest container port in the world in 2019 Located in the Bangladeshi port city of Chittagong and on
+            the banks of the Karnaphuli River, the port of Chittagong handles ninety percent of Bangladesh's
+            export-import trade and has been used by India, Nepal and Bhutan to join for transshipment. The port is one
+            of the oldest in the world</p>
+          <a href="https://en.wikipedia.org/wiki/Port_of_Chittagong" class="btn btn-primary">Read</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/ranga.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Rangamati</h5>
+          <p class="card-text">Rangamati is the administrative headquarters of Rangamati Hill District in the Chittagong
+            Hill Tracts of Bangladesh. It is also the capital city of Chittagong Hill Tracts.
+            The township is located on the western bank of the Kaptai lake. Rangamati is a holiday destination because
+            of its landscape, scenic beauty, lake, indigenous groups (Chakma, Marma, Tripuri, Tanchangya Pangkhua etc.),
+            flora and fauna, indigenous museum, hanging bridge etc.
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Rangamati" class="btn btn-primary">Read</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/kolkata.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bandarban</h5>
+          <p class="card-text">Bandarban,is a district in South-Eastern Bangladesh, and a part of the Chittagong
+            Division.It is one of the three hill districts of Bangladesh and a part of the Chittagong Hill Tracts, the
+            others being Rangamati District and Khagrachhari District.
+            Bandarban is regarded as one of the most attractive travel destinations in Bangladesh. It also is the
+            administrative headquarters of Bandarban district, which has turned into one of the most exotic tourist
+            attractions in Bangladesh.
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Bandarban_District" class="btn btn-primary">Read</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/kua.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Kuakata</h5>
+          <p class="card-text">Kuakata is a town in southern Bangladesh known for its panoramic sea beach.Kuakata beach
+            is a sandy expanse 18 kilometres (11 mi) long and 3 kilometres (1.9 mi) wide.From the beach one can have an
+            unobstructed view of both sunrise and sunset over the Bay of Bengal.
+          </p>
+          <a href="https://en.wikipedia.org/wiki/Bandarban_District" class="btn btn-primary">Read</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../jq/jquery.js" type="text/javascript"></script>
+  <script src="../js/bootstrap.js" type="text/javascript"></script>
+
+</body>
+
+</html>

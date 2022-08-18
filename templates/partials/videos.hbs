@@ -1,0 +1,44 @@
+<section class="gallery">
+        <div class="container">
+            <h2>Explore Chittagong</h2>
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="feature-img">
+                        <img src="video/pic1.png" class="big-img" width="100%">
+                        <img src="video/play.png" class="play-btn" onclick="playVideo('video/vid1.mp4')">
+                    </div>
+                    <p class="vid-title">Tourist places of chittagong</p>
+                    <p class="muted">1,707 views</p>
+                </div>
+                <div class="col-md-3 thumb">
+                    <div class="small-img">
+                        <img src="video/pic2.png">
+                        <img src="video/play.png" class="play-btn" onclick="playVideo('video/vid2.mp4')">
+                    </div>
+                    <div class="small-img">
+                        <img src="video/pic3.png" alt="">
+                        <img src="video/play.png" class="play-btn" onclick="playVideo('video/vid3.mp4')">
+                    </div>
+                    <div class="small-img">
+                        <img src="video/pic4.png" alt="">
+                        <img src="video/play.png" class="play-btn" onclick="playVideo('video/vid4.mp4')">
+                    </div>
+                    <div class="small-img">
+                        <img src="video/pic5.png" alt="">
+                        <img src="video/play.png" class="play-btn" onclick="playVideo('video/vid5.mp4')">
+                    </div>
+                    <div class="small-img">
+                        <img src="video/pic6.png" alt="">
+                        <img src="video/play.png" class="play-btn" onclick="playVideo('video/vid6.mp4')">
+                    </div>
+                </div>
+                <div class="video-player" id="videoPlayer">
+                    <video width="100%" controls id="myVideo">
+                        <source src="video/vid1.mp4" type="video/mp4">
+                    </video>
+                    <img src="video/close.png" class="close-btn" onclick="stopVideo()">
+                </div>
+            </div>
+        </div>
+
+    </section>
