@@ -1,0 +1,449 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialised;
+    font-family: 'Mate SC', serif;
+    box-sizing: border-box;   
+}
+a{ text-decoration: none;}
+a:hover{ text-decoration: none;}
+li{ list-style: none;}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* {{!-- ***************dark/light theme************ --}} */
+body{
+    color: #88c9ce;
+    background: #051626;
+}
+body.light{
+    background: white;
+    color: black;
+}
+form .form-control{
+    background: #fff;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+    outline: none;
+    padding-left: 12px;
+    height: 28px !important;
+    border-radius: 6px !important;
+}
+
+.blog-header{
+    width: 100%;
+    height: 460px;
+    background: url('../img/blog.png') no-repeat ;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 10;
+}
+.blog-header-text{
+    width: 250px;
+    height: 50px;
+    position: relative; 
+    padding-top: 10px;
+    margin: auto;
+    text-align: center;
+    top: 85%;
+    text-shadow: 2px 2px 2px black;
+}
+
+.blog{
+    color: #d4957e;
+    font-size: 100px;
+}
+
+.title{
+    text-align: left;
+}
+.text-muted{
+    text-align: left;
+    margin-bottom: 20px;
+}
+.article{
+    padding: 20px 15px;
+    padding-top: 0;
+}
+.article-img .row{
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+}
+.article p{
+    text-align: justify;
+    text-shadow: none;
+}
+.big-img{
+    border: 3px solid white;
+    width: 95%;
+    display: block;
+    margin: auto;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.small-img{
+    position: relative;
+    align-items: center;
+    margin: 20px 10px;
+    border: 2px solid white;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.thumbnail{
+    padding: 0;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.small-img img{
+    width: 100px;
+    height: 60px;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+/* **********************Other Blog section****************** */
+.card {
+    display: inline-block;
+    position: relative;
+    width: 90%;
+    margin-bottom: 30px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    margin-top: 90px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.card .card-image {
+    height: 70%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -60px;
+    margin-bottom: 8px;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-image img {
+    width: 100%;
+    height: 100%;
+    cursor:pointer;
+}
+/* .card .card-image .card-caption {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 0 2px 5px rgba(33, 33, 33, 0.5);
+    line-height: 18px;
+} */
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+.date{
+    color: cadetblue;
+    padding-bottom: 0;
+}
+.ftr {
+    margin-top: 10px;
+}
+
+.ftr div {
+    display: inline-block;
+}
+.ftr .stats {
+    float: right;
+    line-height: 30px;
+    position: relative;
+    top: 8px;
+    font-size: 20px;
+}
+.ftr .stats i{
+    color: red;
+}
+.table {
+    padding: 0px 10px;
+    margin-bottom: 0 !important;
+}
+.author .avatar {
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.author span{
+    position: relative;
+    color: gray ;
+    top: 4px;
+}
+.table .card-description{
+    text-align: justify !important;
+    font-size: 15px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    line-height: 15px;
+    text-shadow: none;
+}
+
+
+
+/* ************************new blog post section*************** */
+
+.card-heading{
+    border: 0.2px solid rgb(223, 220, 220);
+    opacity: .9;
+    background: url('../img/new-article.jpg') no-repeat;
+    width: 80%;
+    background-size: 100% 100%;
+    margin: auto;
+}
+.titleB{
+    margin-top: 150px;
+    padding-bottom: 20px;
+    color: black;
+    opacity: 1 !important;
+}
+  .newblog  .blog-form{
+    background: #d7f9fc;
+    position: relative;
+    padding: 30px 0;
+    padding-bottom: 0;
+    border-top-right-radius: 3px;
+    width: 80%;
+    margin: auto;
+  } 
+  .newblog  .blog-form:before {
+    bottom: 100%;
+    left: 75px;
+    border: solid transparent;
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-bottom-color: #d7f9fc;
+    border-width: 30px;
+  }
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 24px 55px;
+    border-bottom: 1px solid gray;
+    margin: 0;
+  }
+  
+  .form-row .name {
+    width: 188px;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 11px;
+  }
+  
+  .form-row .value {
+    width: calc(100% - 188px);
+  }
+  ::placeholder{
+      color: rgb(107, 107, 107);
+  }
+
+/* ==========================================================================
+/* #FORM */
+input, textarea {
+    outline: none;
+    margin: 0;
+    width: 100%;
+    font-size: 14px;
+    font-family:"Open Sans";
+}
+  textarea {
+    resize: none;
+  }
+  .input-group {
+    position: relative;
+    margin: 0;
+  }
+  
+  .input, .textarea{
+    background: transparent;
+    line-height: 38px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    color: black;
+    font-size: 18px;
+    transition: all 0.4s ease;
+    padding: 0 20px;
+  }
+  
+  
+  .input:focus, .textarea:focus {
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+  }
+  
+  .textarea{
+    line-height: 1.2;
+    min-height: 120px;
+    padding: 10px 20px;
+  }
+  .input-file {
+    display: none;
+  }
+  .label--desc {
+    font-size: 15px;
+    color: rgb(85, 84, 84);
+    margin-top: 8px;
+  }
+  
+  .input-file + label, .sub {
+    font-size: 15px;
+    color: white;
+    line-height: 40px;
+    background-color: #666666;
+    padding: 0 20px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 15px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+  }
+  
+  .input-file:focus + label,
+  .input-file + label:hover, .sub:hover {
+    background: #1b1b1b;
+    color: white;
+    transform: scale(.9);
+  }
+  
+  .input-file__info {
+    font-size: 15px;
+    color: rgb(85, 84, 84);
+    margin-top: 6px;
+  }
+.card-footer{
+    position: relative;
+    padding: 40px 30px;
+    background: #d7f9fc;
+} 
+ 
+  
+
+
+
+
+/* ======================Responsiveness================ */
+/* ====================================================== */
+
+
+@media (max-width:1268px ){
+    .blog-header{
+        height: 430px;
+    }
+}
+@media (max-width:1100px ){
+    .blog-header{
+        height: 415px;
+    }
+    .blog-header-text{
+        top: 84%;
+    }
+}
+@media (max-width:992px ){
+    .title{
+        font-size: 18px;
+    }
+    .card {
+        width: 100%;
+    }
+    .ftr .stats {
+        font-size: 15px;
+    }
+    .blog-header{
+        height: 380px;
+    }
+    .blog-header-text{
+        top: 82%;
+    }
+    .small-img img{
+        width: 80px;
+        height: 40px;
+    }
+    .ftr .stats {
+        font-size: 15px;
+    }
+    .table .card-description{
+        font-size: 13px;
+    }
+    .newblog  .blog-form, .card-heading{
+        width: 95%;
+    } 
+    .form-row {
+        display: block;
+        padding: 14px 20px;
+      }
+      .form-row .name,
+      .form-row .value {
+        display: block;
+        width: 100%;
+      }
+      .form-row .name {
+        margin-top: 0;
+        margin-bottom: 8px;
+      }
+      .card-footer{
+          padding: 20px;
+      }
+
+}
+@media (max-width:867px ){
+    .blog-header{
+        height: 350px;
+    }
+    .blog-header-text{
+        top: 80%;
+    }
+}
+@media (max-width:768px ){
+    .card {
+        width: 45%;
+        margin-right: 25px;
+    }
+    .otherb{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .small-img{
+        margin: 20px;
+    }
+    .newblog  .blog-form, .card-heading{
+        width: 100%;
+    } 
+}
+@media (max-width:676px ){
+    .blog-header{
+        height: 310px;
+    }
+    .blog-header-text{
+        top: 78%;
+    }
+}
+@media (max-width:576px ){
+    .table .card-description{
+        padding-top: 20px;
+    }
+
+    .card {
+        width: 65%;
+        margin-left: 70px;
+        padding-bottom: 0 !important;
+    }
+}

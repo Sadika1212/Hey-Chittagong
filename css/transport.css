@@ -1,0 +1,304 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialised;
+    font-family: 'Mate SC', serif;
+    box-sizing: border-box;   
+}
+a{ text-decoration: none;}
+a:hover{ text-decoration: none;}
+li{ list-style: none;}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.trans-header{
+    width: 100%;
+    height: 500px;
+    background: url('../img/transport.jpg') no-repeat ;
+    background-size: 100% 100%;
+}
+.trans-header-card{
+    margin-top: -190px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.title{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.card {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    margin-top: 100px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.card .card-image {
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -60px;
+    margin-bottom: 15px;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-image img {
+    width: 100%;
+    height: 100%;
+    cursor:pointer;
+}
+
+.table {
+    padding: 0px 10px;
+}
+.card-caption{
+    font-size: 26px;
+    text-align: left;
+    font-weight: 600;
+    padding: 0 11px;
+}
+.table .card-description{
+    text-align: justify !important;
+    font-size: 15px;
+    padding: 0 11px;
+    margin-bottom: 10px;
+    line-height: 15px;
+    text-shadow: none;
+}
+
+.detail{
+    padding-top: 80px;
+    margin-bottom: 100px;
+}
+
+.image-box img{
+    margin-top: 30px;
+    width: 110%;
+    height: 90%;
+    align-items: center;
+    z-index: 100;
+    position: relative;
+}
+.image1-box img{
+    margin-top: 50px;
+    width: 100%;
+    align-items: center;
+    z-index: 100;
+    position: relative;
+}
+.text-box{
+    margin-left: -20px;
+    width: 110%;
+    padding: 15px;
+    padding-left: 55px;
+    background: white;
+    position: absolute;
+    padding-bottom: 0px;
+}
+.text1-box{
+    margin-right: -30px !important;
+    width: 110%;
+    padding: 15px;
+    padding-bottom: 0px;
+    padding-left: 25px !important;
+    background: white;
+    position: absolute;
+    margin-top: 0;
+}
+
+.row .small-box{
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 2px solid gainsboro;
+}
+
+.btn-trans{
+    text-align: right;
+    background-color: #17A2B8;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.btn-trans:hover{
+    background-color: #106c7a;
+    color: white;
+    transition: .2s all ease;
+}
+.schedule{
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-scd{
+    text-align: right;
+    background-color: #d1eaee;
+    color: black;
+    padding: 5px;
+    font-size: 15px;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 3px;
+    margin: 5px 8px 8px 0;
+}
+.btn-scd:hover{
+    background-color: #7e9ea3;
+    color: white;
+    transition: .2s all ease;
+}
+.small-box p{
+    padding: 0;
+    color: black;
+    margin: 0 !important;
+    text-shadow: none;
+    text-align: left;
+    font-weight: 600;
+    font-size: 18px;
+}
+.small-box .p2{
+    font-size: 14px;
+    padding: 0;
+    padding-bottom: 5px !important;
+    font-weight: 400 !important;
+}
+td{
+    width: 25.8857%;  height: 13px; text-align: center;
+    border: 1px solid gainsboro;
+}
+tr{
+    height: 15px;
+}
+table{
+    color: black;
+    border: none;
+    font-size: 13px;
+    display: block;
+    margin: auto;
+    margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ********************************************** */
+/* _____________________responsiveness_______________ */
+@media (min-width:1200px ){
+    .image-box img{
+        margin-top: 0;
+    }
+    .image1-box img{
+        margin-top: 0;
+    }
+}
+@media (max-width:992px ){
+    .image-box img{
+        margin-top: 8px;
+    }
+    .small-box p{
+        font-size: 16px;
+    }
+    .small-box .p2{
+        font-size: 12px;
+        padding: 0;
+    }
+
+}
+@media (max-width:768px ){
+    .image-box img{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .image1-box img{
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+    .btn-trans{
+        padding: 3px;
+        font-size: 13px;
+    }
+    .small-box p{
+        line-height: 15px;
+    }
+    .text-box{
+        padding-left: 47px;
+    }
+}
+@media (max-width:576px ){
+    .card {
+        width: 80%;
+    }
+    .image-box{
+        margin-top: 0;
+        text-align: center;
+    }
+    .image1-box{
+        margin-top: 0;
+        text-align: center;
+    }
+    .image-box img{
+        width: 50%;
+        margin-top: 0;
+    }
+    .image1-box img{
+        width: 40%;
+        margin-top: 0;
+    }
+    .text-box{
+        margin-top: -135px;
+        margin-left: 82px;
+        width: 70%;
+        padding: 30px;
+        padding-top: 58px;
+    }
+    .text1-box{
+        margin-top: 175px;
+        margin-left: 82px;
+        width: 70%;
+        padding: 15px;
+        padding-top: 58px;
+    }
+    .rows{
+        margin-bottom: 300px;
+    }
+    .detail{
+        margin-bottom: 380px;
+    }
+    .title{
+        font-size: 30px;
+    }
+}

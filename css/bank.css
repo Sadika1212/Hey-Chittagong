@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-font-smoothing: antialised;
+    font-family: 'Mate SC', serif;
+    box-sizing: border-box;   
+}
+a{ text-decoration: none;}
+a:hover{ text-decoration: none;}
+li{ list-style: none;}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* {{!-- ***************dark/light theme************ --}} */
+body{
+    color: #88c9ce;
+    background: #051626;
+}
+body.light{
+    background: white;
+}
+section{
+    padding-top: 55px;
+}
+
+
+
+
+
+/* *********Headrer ANd NAvbar***************8 */
+
+.navbar:before{
+    background: #88c9ce !important;
+    opacity: 1 !important;
+}
+.bank-header{
+    width: 100%;
+    height: 60vh;
+    background: url('../img/bank2.jpeg') no-repeat ;
+    background-position: bottom right;
+    position: relative;
+    z-index: 10;
+}
+.bank-header-text{
+    width: 500px;
+    height: 180px;
+    position: absolute; 
+    padding-top: 15px;
+    top: 26%;
+    left: 10%;
+}
+.bank-header-text h2, .bank-header-text h5{
+    text-align: left;
+    justify-content: left;
+    padding-bottom: 10px;
+    font-weight: 600;
+    color: #88c9ce;
+}
+.bank-header-text h2{
+    font-size: 40px;
+}
+.bank-header-text h5{
+    font-size: 25px;
+}
+
+form .form-control{
+    background: #fff;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+    outline: none;
+    padding-left: 12px;
+    height: 28px !important;
+    border-radius: 6px !important;
+}
+/* */
+.btnsearch{
+    color: #d8ac9c !important;
+}
+
+.full-card{
+    padding-bottom: 25px;
+}
+.card{
+    box-shadow: 2px 2px 10px black;
+    border-radius: 0 !important;
+}
+
+.card-body{
+    padding: 10px;
+}
+.card-body .card-text{
+    font-size: 15px !important;
+    text-shadow: none;
+    text-align: left;
+    padding-bottom: 5px;
+    margin: 0px;
+    color: rgb(105, 103, 103);
+}
+.card-body .card-title{
+    padding-bottom: 0;
+    color: black;
+    margin-bottom: 0px;
+}
+.card-body .btn{
+    padding: 2px;
+    font-size: 15px;
+}
+.card-body .type{
+    margin-top: 0 !important;
+    color: #d4957e;
+    font-family: Josefin Sans !important;
+    background: rgb(221, 232, 252);
+    padding: 0 3px;
+}
+
+.map-header-text h3{
+    font-weight: 600;
+    color: #88c9ce;
+    margin: 20px;
+}
+iframe{
+    width: 100%;
+}
+
+
+@media (max-width:1200px ){
+    .card-body .card-text{
+        font-size: 13px !important;
+    }
+    .card-body .type{
+        font-size: 12px !important;
+    }
+    .card-body .card-title{
+        font-size: 18px;
+    }   
+}
+@media (max-width:768px ){
+    iframe{
+        height: 400px;
+    }
+}
+@media (max-width:575px ){
+    .bank-header-text{
+        width: 450px;
+        height: 150px;
+    }
+    .full-card{
+        width: 65%;
+        display: block;
+        margin: auto;
+    }
+    iframe{
+        height: 350px;
+    }
+}
